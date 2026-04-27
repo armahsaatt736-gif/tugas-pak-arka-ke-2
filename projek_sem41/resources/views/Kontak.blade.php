@@ -1,8 +1,17 @@
-<div>
-    <a href="/">Home</a>
-    <a href="/profil">Profil</a>
-    <a href="/kontak">Kontak</a>
+@extends('app')
 
-    <h1>Halaman Kontak</h1>
-    <p>Email: arma@email.com</p>
+@section('title', 'Kontak')
+
+@section('content')
+
+<div class="text-center">
+    <h1 class="text-3xl font-bold text-green-600 mb-4">
+        selamat datang di kontak
+    </h1>
+    <p class="text-gray-600">
+        bagi yang mengalami masalah, silahkan hubungi email di bawah
+    </p>
+
 </div>
+
+@endsection
