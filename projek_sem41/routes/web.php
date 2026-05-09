@@ -5,8 +5,10 @@ use App\Http\controllers\Homecontroller;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\DonasiController;
+use App\Http\Controllers\CampaignController;
 
 Route::get('/', [Homecontroller::class, 'index']);
 Route::get('/profil', [ProfilController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/Donasi', [DonasiController::class, 'index']);
+Route::resource('campaign', CampaignController::class);
